@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>localhost.brew-file.updatede</string>
+	<key>ProcessType</key>
+	<string>Background</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/zsh</string>
+		<string>-c</string>
+		<string>/usr/local/bin/brew-file --leaves update &amp;&amp; /usr/local/bin/terminal-notifier -title 'BrewFile' -message 'brew file update'</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StartCalendarInterval</key>
+	<array>
+    <dict>
+        <key>Hour</key>
+        <integer>12</integer>
+        <key>Minute</key>
+        <integer>2</integer>
+    </dict>
+    <dict>
+        <key>Hour</key>
+        <integer>18</integer>
+        <key>Minute</key>
+        <integer>2</integer>
+    </dict>
+    <dict>
+        <key>Hour</key>
+        <integer>23</integer>
+        <key>Minute</key>
+        <integer>2</integer>
+    </dict>
+	</array>
+		<key>StandardErrorPath</key>
+		<string>/tmp/localhost.brew-file.updatede.stderr</string>
+		<key>StandardOutPath</key>
+		<string>/tmp/localhost.brew-file.updatede.stdout</string>
+</dict>
+</plist>

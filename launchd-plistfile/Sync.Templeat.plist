@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <!-- Label plistと同一の名前 -->       
+         <!-- usernameは自分のユーザー名に変更する -->                                                                                                                                                             
+        <string>me.username.rsync</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>rsync</string>
+            <string>-av</string>
+            <string>--delete</string>
+            <string>-e</string>
+            <string>ssh</string>
+             <!-- ホストのrsync対象元  -->
+            <string>/Users/username/sample/</string>
+             <!-- リモートのrsync対象先(dest)  -->
+            <string>vagrant@192.168.56.103:/home/vagrant/sample</string>
+        </array>
+        <key>WatchPaths</key>
+        <array>
+            <string>/Users/username/sample/</string>
+        </array>
+         <!-- ログの出力先設定デフォルトは/var/log/system.logに書かれるらしい。最初は書いておいて動作上問題がなければ/dev/nullにしてもよいと思う(そうしないとログで容量が圧迫される  -->
+        <key>StandardOutPath</key>
+        <string>/tmp/me.username.monitor.out.log</string>
+        <key>StandardErrorPath</key>
+        <string>/tmp/me.username.monitor.err.log</string>
+    </dict>
+</plist>

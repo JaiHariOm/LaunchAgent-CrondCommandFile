@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>localhost.brew.cask.upgrade</string>
+	<key>ProcessType</key>
+	<string>Background</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/zsh</string>
+		<string>-c</string>
+		<string>/usr/local/bin/brew cask upgarade -C &amp;&amp; /usr/local/bin/terminal-notifier -title 'Brew Cask Upgrader' -message 'Cask upgraded!'</string>
+	</array>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Weekday</key>
+    <integer>1</integer>
+    <key>Hour</key>
+    <integer>19</integer>
+    <key>Minute</key>
+    <integer>1</integer>
+ 	</dict>
+		<key>StandardErrorPath</key>
+		<string>/tmp/localhost.brew.cask.upgrade.stderr</string>
+		<key>StandardOutPath</key>
+		<string>/tmp/localhost.brew.cask.upgrade.stdout</string>
+</dict>
+</plist>

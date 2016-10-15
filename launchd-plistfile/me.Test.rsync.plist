@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>me.Test.rsync</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>rsync</string>
+            <string>-au</string>
+            <string>--delete</string>
+            <string>/Users/home/workspace/RSync-Launchd-Log/TestText_WorkingSpeace</string>
+            <string>/Users/home/workspace/RSync-Launchd-Log/TestTextLog</string>
+        </array>
+        <key>StandardOutPath</key>
+        <string>/tmp/me.Test.rsync.monitor.out.log</string>
+        <key>StandardErrorPath</key>
+        <string>/tmp/me.Test.rsync.monitor.err.log</string>
+        <key>WatchPaths</key>
+        <array>
+            <string>/Users/home/workspace/RSync-Launchd-Log/TestText_WorkingSpeace</string>
+        </array>
+    </dict>
+</plist>
