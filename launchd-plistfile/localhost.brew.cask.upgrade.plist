@@ -27,3 +27,11 @@
 		<string>/tmp/localhost.brew.cask.upgrade.stdout</string>
 </dict>
 </plist>
+
+
+<!--[localhost.brew cask.upgrade.plist]
+
+Copyright (c) [year] [fullname]
+
+This software is released under the MIT License.
+http://opensource.org/licenses/mit-license.php-->

@@ -40,3 +40,9 @@
 ## まとめ
 
 何となく今のところはうまく行っているような気がするが、設定方法などまだまだ研究の余地はあると思うので、もう少し探っていこうと思っていいる
+
+## LICENSE
+
+This software is released under the MIT License, see LICENSE.txt.
+
+このソフトウェアは、MITライセンスのもとで公開されています、LICENSE.txtを参照されたし。
