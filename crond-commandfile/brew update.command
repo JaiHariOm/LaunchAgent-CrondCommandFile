@@ -6,7 +6,7 @@ brew update
 
 #[brew update.command]
 
-#Copyright (c) [year] [fullname]
+#Copyright (c) 2013 JaiHariOm (Hayashi Sakihara)
 
 #This software is released under the MIT License.
 #http://opensource.org/licenses/mit-license.php
